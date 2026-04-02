@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Nguyễn Thị Mỹ Duyên</title>
+  <meta name="description" content="CV cá nhân của Nguyễn Thị Mỹ Duyên - Thạc sỹ Thú y, Viên chức Trung tâm Khuyến nông tỉnh Vĩnh Long." />
+  <style>
+    :root{
+      --sky-1:#89d6ff;
+      --sky-2:#5bb8ff;
+      --sky-3:#2f8fe8;
+      --pink-1:#ffd6e7;
+      --pink-2:#ffb7d3;
+      --pink-3:#f58ab6;
+      --purple:#7a6ff0;
+      --text:#223046;
+      --muted:#64748b;
+      --white:#ffffff;
+      --card:rgba(255,255,255,0.75);
+      --border:rgba(255,255,255,0.55);
+      --shadow:0 10px 30px rgba(66, 133, 244, 0.16);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --radius-md:16px;
+      --max:1200px;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.35) 25%, transparent 45%),
+        radial-gradient(circle at 90% 10%, rgba(255,197,223,0.55) 0%, transparent 30%),
+        radial-gradient(circle at 15% 85%, rgba(137,214,255,0.45) 0%, transparent 30%),
+        linear-gradient(135deg, #eaf8ff 0%, #fef7fb 42%, #eef6ff 100%);
+      overflow-x:hidden;
+      line-height:1.6;
+    }
+
+    body::before,
+    body::after{
+      content:"";
+      position:fixed;
+      width:380px;
+      height:380px;
+      border-radius:50%;
+      z-index:-1;
+      filter:blur(30px);
+      opacity:.35;
+    }
+
+    body::before{
+      top:-120px;
+      right:-100px;
+      background:linear-gradient(135deg, var(--pink-2), var(--sky-1));
+      animation:floatBlob 12s ease-in-out infinite;
+    }
+
+    body::after{
+      bottom:-140px;
+      left:-120px;
+      background:linear-gradient(135deg, var(--sky-1), var(--pink-1));
+      animation:floatBlob 14s ease-in-out infinite reverse;
+    }
+
+    @keyframes floatBlob{
+      0%,100%{ transform:translate(0,0) scale(1); }
+      50%{ transform:translate(20px,-25px) scale(1.08); }
+    }
+
+    .container{
+      width:min(calc(100% - 32px), var(--max));
+      margin:0 auto;
+    }
+
+    .glass{
+      background:var(--card);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border:1px solid var(--border);
+      box-shadow:var(--shadow);
+    }
+
+    .navbar{
+      position:sticky;
+      top:14px;
+      z-index:99;
+      margin:14px auto 0;
+      width:min(calc(100% - 24px), 1080px);
+      border-radius:999px;
+      padding:10px 14px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:800;
+      color:var(--sky-3);
+      letter-spacing:.3px;
+    }
+
+    .brand-badge{
+      width:42px;
+      height:42px;
+      border-radius:50%;
+      background:linear-gradient(135deg, var(--sky-2), var(--pink-3));
+      color:#fff;
+      display:grid;
+      place-items:center;
+      font-weight:900;
+      box-shadow:0 8px 20px rgba(122,111,240,.24);
+    }
+
+    .nav-links{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      color:var(--text);
+      padding:10px 14px;
+      border-radius:999px;
+      font-size:14px;
+      transition:.25s ease;
+    }
+
+    .nav-links a:hover{
+      background:linear-gradient(135deg, rgba(91,184,255,.18), rgba(245,138,182,.18));
+      transform:translateY(-1px);
+    }
+
+    header.hero{
+      padding:56px 0 26px;
+      position:relative;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:28px;
+      align-items:center;
+    }
+
+    .hero-card{
+      padding:40px;
+      border-radius:var(--radius-xl);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .hero-card::before{
+      content:"";
+      position:absolute;
+      inset:auto -50px -70px auto;
+      width:220px;
+      height:220px;
+      background:radial-gradient(circle, rgba(137,214,255,.38), transparent 70%);
+      border-radius:50%;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      font-size:14px;
+      color:var(--sky-3);
+      background:rgba(91,184,255,.12);
+      border:1px solid rgba(91,184,255,.18);
+      border-radius:999px;
+      padding:8px 14px;
+      margin-bottom:16px;
+      font-weight:600;
+    }
+
+    h1{
+      font-size:clamp(34px, 5vw, 62px);
+      line-height:1.04;
+      margin-bottom:14px;
+      letter-spacing:.2px;
+    }
+
+    .gradient-text{
+      background:linear-gradient(135deg, var(--sky-3), var(--purple), var(--pink-3));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+    }
+
+    .hero-sub{
+      font-size:18px;
+      color:var(--muted);
+      max-width:680px;
+      margin-bottom:24px;
+    }
+
+    .hero-actions{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-bottom:24px;
+    }
+
+    .btn{
+      text-decoration:none;
+      border:none;
+      cursor:pointer;
+      padding:13px 18px;
+      border-radius:999px;
+      font-weight:700;
+      transition:.3s ease;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .btn-primary{
+      color:#fff;
+      background:linear-gradient(135deg, var(--sky-3), var(--pink-3));
+      box-shadow:0 10px 24px rgba(92,147,234,.25);
+    }
+
+    .btn-primary:hover{
+      transform:translateY(-2px);
+      box-shadow:0 14px 30px rgba(92,147,234,.32);
+    }
+
+    .btn-soft{
+      color:var(--text);
+      background:rgba(255,255,255,.8);
+      border:1px solid rgba(255,255,255,.85);
+    }
+
+    .btn-soft:hover{
+      transform:translateY(-2px);
+      background:#fff;
+    }
+
+    .hero-stats{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+      margin-top:10px;
+    }
+
+    .stat{
+      padding:18px;
+      border-radius:20px;
+      text-align:center;
+      background:linear-gradient(180deg, rgba(255,255,255,.85), rgba(255,255,255,.55));
+      border:1px solid rgba(255,255,255,.7);
+    }
+
+    .stat strong{
+      display:block;
+      font-size:24px;
+      color:var(--sky-3);
+      margin-bottom:4px;
+    }
+
+    .stat span{
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .profile-wrap{
+      position:relative;
+      display:grid;
+      place-items:center;
+      min-height:100%;
+    }
+
+    .profile-card{
+      width:100%;
+      max-width:400px;
+      padding:24px;
+      border-radius:30px;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .profile-card::before{
+      content:"";
+      position:absolute;
+      top:-60px;
+      right:-50px;
+      width:180px;
+      height:180px;
+      background:radial-gradient(circle, rgba(245,138,182,.45), transparent 70%);
+      border-radius:50%;
+    }
+
+    .avatar-ring{
+      width:240px;
+      height:240px;
+      margin:10px auto 18px;
+      padding:8px;
+      border-radius:50%;
+      background:linear-gradient(135deg, var(--sky-2), var(--pink-3), var(--sky-1));
+      box-shadow:0 18px 40px rgba(122,111,240,.22);
+      animation:floatY 5s ease-in-out infinite;
+    }
+
+    @keyframes floatY{
+      0%,100%{ transform:translateY(0); }
+      50%{ transform:translateY(-8px); }
+    }
+
+    .avatar{
+      width:100%;
+      height:100%;
+      border-radius:50%;
+      object-fit:cover;
+      display:block;
+      border:5px solid rgba(255,255,255,.9);
+      background:#fff;
+    }
+
+    .profile-name{
+      font-size:28px;
+      font-weight:900;
+      margin-bottom:8px;
+    }
+
+    .profile-role{
+      color:var(--muted);
+      font-size:16px;
+      margin-bottom:16px;
+    }
+
+    .chips{
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .chip{
+      padding:9px 12px;
+      border-radius:999px;
+      font-size:13px;
+      font-weight:700;
+      color:#4b5563;
+      background:linear-gradient(135deg, rgba(137,214,255,.16), rgba(255,183,211,.18));
+      border:1px solid rgba(255,255,255,.8);
+    }
+
+    section{
+      padding:26px 0;
+    }
+
+    .section-title{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      margin-bottom:20px;
+    }
+
+    .section-title h2{
+      font-size:clamp(24px, 3vw, 36px);
+      line-height:1.1;
+    }
+
+    .section-title p{
+      color:var(--muted);
+      max-width:680px;
+    }
+
+    .grid-2{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:22px;
+    }
+
+    .card{
+      border-radius:var(--radius-lg);
+      padding:24px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .card h3{
+      font-size:20px;
+      margin-bottom:14px;
+    }
+
+    .info-list{
+      display:grid;
+      gap:14px;
+    }
+
+    .info-item{
+      display:flex;
+      align-items:flex-start;
+      gap:14px;
+      padding:14px;
+      border-radius:16px;
+      background:rgba(255,255,255,.55);
+      border:1px solid rgba(255,255,255,.65);
+    }
+
+    .icon{
+      width:42px;
+      height:42px;
+      flex:0 0 42px;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      font-size:18px;
+      color:#fff;
+      background:linear-gradient(135deg, var(--sky-2), var(--pink-3));
+      box-shadow:0 8px 18px rgba(92,147,234,.2);
+    }
+
+    .info-item b{
+      display:block;
+      margin-bottom:2px;
+    }
+
+    .info-item span, .info-item a{
+      color:var(--muted);
+      text-decoration:none;
+      word-break:break-word;
+    }
+
+    .pill-group{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:8px;
+    }
+
+    .pill{
+      padding:10px 14px;
+      border-radius:999px;
+      background:linear-gradient(135deg, rgba(137,214,255,.16), rgba(255,214,231,.55));
+      border:1px solid rgba(255,255,255,.8);
+      font-weight:600;
+      color:#435066;
+    }
+
+    .timeline{
+      position:relative;
+      margin-top:12px;
+      padding-left:28px;
+    }
+
+    .timeline::before{
+      content:"";
+      position:absolute;
+      left:10px;
+      top:0;
+      bottom:0;
+      width:3px;
+      background:linear-gradient(180deg, var(--sky-2), var(--pink-3));
+      border-radius:999px;
+    }
+
+    .timeline-item{
+      position:relative;
+      padding:0 0 22px 18px;
+    }
+
+    .timeline-item::before{
+      content:"";
+      position:absolute;
+      left:-24px;
+      top:6px;
+      width:14px;
+      height:14px;
+      border-radius:50%;
+      background:#fff;
+      border:4px solid var(--pink-3);
+      box-shadow:0 0 0 5px rgba(255,183,211,.22);
+    }
+
+    .timeline-year{
+      display:inline-block;
+      font-size:13px;
+      font-weight:800;
+      color:#fff;
+      padding:6px 10px;
+      border-radius:999px;
+      background:linear-gradient(135deg, var(--sky-3), var(--pink-3));
+      margin-bottom:10px;
+    }
+
+    .timeline-item h4{
+      font-size:18px;
+      margin-bottom:6px;
+    }
+
+    .timeline-item p{
+      color:var(--muted);
+    }
+
+    .skills-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px 18px;
+      margin-top:8px;
+    }
+
+    .skill{
+      padding:14px;
+      border-radius:18px;
+      background:rgba(255,255,255,.58);
+      border:1px solid rgba(255,255,255,.7);
+    }
+
+    .skill-head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom:8px;
+      gap:12px;
+      font-weight:700;
+    }
+
+    .bar{
+      width:100%;
+      height:10px;
+      border-radius:999px;
+      background:rgba(203,213,225,.45);
+      overflow:hidden;
+    }
+
+    .bar span{
+      display:block;
+      height:100%;
+      width:0;
+      border-radius:999px;
+      background:linear-gradient(90deg, var(--sky-2), var(--pink-3));
+      transition:1.2s cubic-bezier(.2,.8,.2,1);
+    }
+
+    .research-list, .future-list, .hobby-list, .desc-list{
+      display:grid;
+      gap:12px;
+      margin-top:8px;
+    }
+
+    .fancy-item{
+      display:flex;
+      align-items:flex-start;
+      gap:12px;
+      padding:14px 16px;
+      border-radius:18px;
+      background:rgba(255,255,255,.58);
+      border:1px solid rgba(255,255,255,.7);
+    }
+
+    .fancy-bullet{
+      width:28px;
+      height:28px;
+      flex:0 0 28px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      color:#fff;
+      font-size:14px;
+      font-weight:900;
+      background:linear-gradient(135deg, var(--sky-3), var(--pink-3));
+      margin-top:1px;
+    }
+
+    .contact-card{
+      display:grid;
+      grid-template-columns: 1fr .95fr;
+      gap:22px;
+      align-items:stretch;
+    }
+
+    .contact-box{
+      padding:26px;
+      border-radius:var(--radius-lg);
+    }
+
+    .contact-mini{
+      display:grid;
+      gap:14px;
+    }
+
+    .contact-item{
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+      padding:14px;
+      background:rgba(255,255,255,.56);
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,.7);
+    }
+
+    .footer{
+      padding:28px 0 50px;
+      text-align:center;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .reveal{
+      opacity:0;
+      transform:translateY(32px);
+      transition:opacity .8s ease, transform .8s ease;
+    }
+
+    .reveal.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    .delay-1{ transition-delay:.08s; }
+    .delay-2{ transition-delay:.16s; }
+    .delay-3{ transition-delay:.24s; }
+    .delay-4{ transition-delay:.32s; }
+
+    @media (max-width: 980px){
+      .hero-grid,
+      .grid-2,
+      .contact-card{
+        grid-template-columns:1fr;
+      }
+
+      .hero-card,
+      .profile-card,
+      .card,
+      .contact-box{
+        padding:22px;
+      }
+
+      .hero-stats{
+        grid-template-columns:1fr;
+      }
+
+      .skills-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width: 720px){
+      .navbar{
+        top:8px;
+        border-radius:24px;
+        padding:12px;
+      }
+
+      .brand span:last-child{
+        display:none;
+      }
+
+      .nav-links{
+        justify-content:flex-end;
+        gap:6px;
+      }
+
+      .nav-links a{
+        padding:8px 10px;
+        font-size:13px;
+      }
+
+      header.hero{
+        padding-top:36px;
+      }
+
+      .avatar-ring{
+        width:190px;
+        height:190px;
+      }
+
+      .profile-name{
+        font-size:24px;
+      }
+
+      .section-title{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar glass">
+    <div class="brand">
+      <div class="brand-badge">CV</div>
+      <span>My Profile</span>
+    </div>
+    <div class="nav-links">
+      <a href="#gioi-thieu">Giới thiệu</a>
+      <a href="#kinh-nghiem">Kinh nghiệm</a>
+      <a href="#ky-nang">Kỹ năng</a>
+      <a href="#lien-he">Liên hệ</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="gioi-thieu">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-card glass reveal">
+          <div class="eyebrow">💙 Hồ sơ cá nhân chuyên nghiệp</div>
+          <h1>
+            Xin chào, tôi là
+            <span class="gradient-text">Nguyễn Thị Mỹ Duyên</span>
+          </h1>
+          <p class="hero-sub">
+            Thạc sỹ Thú y, hiện đang công tác tại Trung tâm Khuyến nông - Sở Nông nghiệp và Môi trường tỉnh Vĩnh Long.
+            Tôi định hướng phát triển chuyên sâu trong lĩnh vực khuyến nông, an toàn sinh học, kiểm soát dịch bệnh
+            và chuyển giao quy trình chăn nuôi bền vững cho cộng đồng địa phương.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#lien-he">Liên hệ ngay</a>
+            <a class="btn btn-soft" href="#kinh-nghiem">Xem kinh nghiệm</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>6.5+</strong>
+              <span>Năm kinh nghiệm</span>
+            </div>
+            <div class="stat">
+              <strong>Thạc sỹ</strong>
+              <span>Chuyên ngành Thú y</span>
+            </div>
+            <div class="stat">
+              <strong>Vĩnh Long</strong>
+              <span>Nơi sinh sống & làm việc</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-wrap reveal delay-1">
+          <div class="profile-card glass">
+            <div class="avatar-ring">
+              <img
+                class="avatar"
+                alt="Nguyễn Thị Mỹ Duyên"
+                src="data:image/png;base64,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MQDg8ccfHwDg22+/HQBQ3f+8AAAAAPB3mWQyGf8nW7duHQDgn//5nwcA3H///QEAfPjhhwMAH3/88QEA4N577x0A4NSpUwMAH3zwwe+9r30tAIBz5879b9q8efMCAJ566qkBAH7+85+/f7v77rtvAIDly5cPAHjiiScGAHz++ecHAPzud78bAODqq68eAPDQQw8NAHjvvfcGAHz11VcHAPzlL385AODBBx8cAPDjH/84AODtt98eAPD4448PAHjllVcGAPz85z8PAHj55ZcHAPz2t78dAPDll18eAHj11VcPAHj11VcPAHjiiScGAHzxxRcHAPz6178eAPDkk08OAHjiiScGAHz44YcHAPzud78bAPDCCy8MALh06dIAgJ07dw4AePLJJwcA/PjHPx4AcODAgQEAdu/ePQDgv//7vwcA7N27dwDgmWeeGQDg4YcfHgDg448/HgDg3LlzAwDcc889AwC+/vrrAQD37t07AIDly5cPAHjxxRcHAHzwwQcPAHjttdcGAHz44YcHAPzud78bAODll18eAHDq1CkAgM2bNw8A+PDDDwYA3Lx58wCAK1euHADw8MMPDwD49ttvBwDcunXrAQB27tw5AODIkSMDAPzqV78aAODYsWMDAPz0pz8NAHj22WcHAPz85z8PAHj66acHAPDTTz8NAHj00UcHAFB2AAAAAADwW5lkMhn/J9u3bx8A8MMPPzwA4Pnnnx8A4E9/+tMAgLVr1w4AePLJJwcA/OIXvxgA8MMf/nAA4MsvvxwAcOTIkQEA3bp1CwDg9OnTAwCuvvrqAQB+85vfDAB46623BgD85je/GQDgk08+OQDg5MmTAwD8+Mc/HgDg4YcfHgDg0KFDAwDWr18/AOD1118fAPDHP/5xAODVV18dAPDGG28MAHj66acHAPDqq68eAPDll18eAHj11VcPAHjrrbcGAHz11VcHAPz2t78dAPD8888PAHj00UcHAPzoo48GAPDwww8PAHj33XcHAPzud78bAPDZZ58dAHjqqacGAHz99dcHAPz3f/93AIDdu3cPAHjllVcHAPzjH/84AOD48eMDANx7770DAJ566qkBAJ599tkBAKZPn56fPn36BwAcPHiwAICPP/54AODrr78eAPDyyy8PAPjNb34zAOD9998fAPD0008PAPjqq68GAPDZZ58dAPDqq68eAPD0008PAPDcc88NADh06NAAAP7whz8MAPDpp58eAPD4448PAHj66acHAHzxxRcHAPz4448PAHj22WcHAHz66acHAPDhhx8eAHDs2LEBAKZPn56fP39+AICNGzcOAHjkkUcGAPDmm28OAHj33XcHAHz++ecHAPDll18eAPDll18eAHD8+PEBAJw+fXoAgO7duwcA3H///QEAfPjhhwMAvv/++wEAfvvb3wYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8P8p5q5g4mKkQAAAAASUVORK5CYII=" />
+            </div>
+            <div class="profile-name">Nguyễn Thị Mỹ Duyên</div>
+            <div class="profile-role">Thạc sỹ Thú y • Viên chức Khuyến nông</div>
+            <div class="chips">
+              <div class="chip">An toàn sinh học</div>
+              <div class="chip">Chăn nuôi bền vững</div>
+              <div class="chip">Hỗ trợ kỹ thuật</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="grid-2">
+        <div class="card glass reveal">
+          <div class="section-title">
+            <h2>Thông tin cá nhân</h2>
+          </div>
+          <div class="info-list">
+            <div class="info-item">
+              <div class="icon">👩</div>
+              <div>
+                <b>Giới tính</b>
+                <span>Nữ</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon">🎂</div>
+              <div>
+                <b>Ngày sinh</b>
+                <span>19-07-1996</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon">📍</div>
+              <div>
+                <b>Địa chỉ</b>
+                <span>Xã Bình Phú, tỉnh Vĩnh Long</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon">🎓</div>
+              <div>
+                <b>Học vấn</b>
+                <span>Thạc sỹ Thú y - Đại học Cần Thơ</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon">💼</div>
+              <div>
+                <b>Kinh nghiệm</b>
+                <span>6,5 năm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card glass reveal delay-1">
+          <div class="section-title">
+            <h2>Định hướng nghiên cứu</h2>
+          </div>
+          <div class="research-list">
+            <div class="fancy-item">
+              <div class="fancy-bullet">✓</div>
+              <div>Nghiên cứu an toàn sinh học và kiểm soát dịch bệnh truyền nhiễm.</div>
+            </div>
+            <div class="fancy-item">
+              <div class="fancy-bullet">✓</div>
+              <div>Ứng dụng phụ phẩm nông nghiệp trong dinh dưỡng vật nuôi.</div>
+            </div>
+            <div class="fancy-item">
+              <div class="fancy-bullet">✓</div>
+              <div>Chuyển giao quy trình chăn nuôi VietGAHP và bền vững.</div>
+            </div>
+          </div>
+
+          <div class="section-title" style="margin-top:24px;">
+            <h2>Mục tiêu tương lai</h2>
+          </div>
+          <div class="future-list">
+            <div class="fancy-item">
+              <div class="fancy-bullet">★</div>
+              <div>Trở thành chuyên gia kỹ thuật nòng cốt trong ngành Khuyến nông.</div>
+            </div>
+            <div class="fancy-item">
+              <div class="fancy-bullet">★</div>
+              <div>Xây dựng chuỗi giá trị chăn nuôi an toàn cho cộng đồng địa phương.</div>
+            </div>
+            <div class="fancy-item">
+              <div class="fancy-bullet">★</div>
+              <div>Số hóa quy trình quản lý và hỗ trợ kỹ thuật cho nông dân.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kinh-nghiem">
+    <div class="container">
+      <div class="section-title reveal">
+        <div>
+          <h2>Kinh nghiệm làm việc</h2>
+          <p>Hành trình phát triển từ môi trường thực tập chuyên ngành đến các vị trí hành chính, kinh doanh, hỗ trợ vận hành và hiện nay là viên chức trong lĩnh vực khuyến nông.</p>
+        </div>
+      </div>
+
+      <div class="card glass reveal delay-1">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2016</div>
+            <h4>Thực tập sinh tại các trang trại thuộc khối ngành Chăn nuôi thú y</h4>
+            <p>Tích lũy nền tảng chuyên môn thực tế trong môi trường chăn nuôi và thú y.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2020</div>
+            <h4>Nhân viên tiếp nhận dịch vụ tại Hệ thống cửa hàng Head Honda Hóa Cần Thơ</h4>
+            <p>Rèn luyện kỹ năng giao tiếp, tiếp nhận thông tin khách hàng và xử lý tình huống dịch vụ.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2021</div>
+            <h4>Kế toán bán hàng tại Công ty TNHH MTV Tân Á Đại Thành - Chi nhánh Cần Thơ</h4>
+            <p>Phụ trách các nghiệp vụ bán hàng, theo dõi số liệu, chứng từ và hỗ trợ công tác kế toán nội bộ.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2022</div>
+            <h4>Sale Admin GT/MT/Agent tại Công ty TNHH Japfa Comfeed Việt Nam - Chi nhánh HCM</h4>
+            <p>Tiếp nhận đơn hàng, cập nhật dữ liệu kinh doanh, theo dõi công nợ và hỗ trợ vận hành kinh doanh.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2023</div>
+            <h4>Sale Admin / Giao dịch viên tại Công ty Cổ phần Viễn thông Di động Vietnamobile - Trung tâm kinh doanh Trà Vinh</h4>
+            <p>Hỗ trợ giao dịch, chăm sóc khách hàng, xử lý phản hồi và nghiệp vụ hành chính liên quan.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">Đến nay</div>
+            <h4>Viên chức tại Trung tâm Khuyến nông - Sở Nông nghiệp và Môi trường tỉnh Vĩnh Long</h4>
+            <p>Tham gia công tác hỗ trợ kỹ thuật, chuyển giao quy trình, quản lý văn bản và thúc đẩy các hoạt động khuyến nông phục vụ cộng đồng địa phương.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-top:22px;">
+        <div class="card glass reveal delay-2">
+          <h3>Mô tả năng lực công việc</h3>
+          <div class="desc-list">
+            <div class="fancy-item">
+              <div class="fancy-bullet">1</div>
+              <div>Tiếp nhận đơn hàng và xử lý tình huống, thông tin, ý kiến phản hồi của khách hàng.</div>
+            </div>
+            <div class="fancy-item">
+              <div class="fancy-bullet">2</div>
+              <div>Thông thạo máy tính và các phần mềm công cụ hợp tác hỗ trợ công việc; soạn thảo văn bản, giấy tờ nội bộ và hỗ trợ nghiệp vụ kế toán.</div>
+            </div>
+            <div class="fancy-item">
+              <div class="fancy-bullet">3</div>
+              <div>Xây dựng kế hoạch hoạt động, theo dõi và nhắc nhở các nhân viên khác trong bộ phận thực hiện đúng tiến độ.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card glass reveal delay-3">
+          <h3>Năng lực vận hành & quản lý</h3>
+          <div class="desc-list">
+            <div class="fancy-item">
+              <div class="fancy-bullet">4</div>
+              <div>Làm báo cáo doanh thu chi tiết, cập nhật dữ liệu kinh doanh và số liệu công nợ; thực hiện các báo cáo theo yêu cầu cấp trên.</div>
+            </div>
+            <div class="fancy-item">
+              <div class="fancy-bullet">5</div>
+              <div>Quản lý kho hàng, nhập xuất hàng, ghi chép kiểm kê kho bãi cụ thể và chính xác.</div>
+            </div>
+            <div class="fancy-item">
+              <div class="fancy-bullet">6</div>
+              <div>Soạn thảo, lập kế hoạch và xử lý văn bản liên quan đến hoạt động quản lý nhà nước.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ky-nang">
+    <div class="container">
+      <div class="grid-2">
+        <div class="card glass reveal">
+          <div class="section-title">
+            <h2>Kỹ năng</h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skill">
+              <div class="skill-head"><span>Tin học văn phòng</span><span>95%</span></div>
+              <div class="bar"><span data-width="95%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-head"><span>Tiếng Anh</span><span>58%</span></div>
+              <div class="bar"><span data-width="58%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-head"><span>Giải quyết vấn đề</span><span>85%</span></div>
+              <div class="bar"><span data-width="85%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-head"><span>Giao tiếp</span><span>90%</span></div>
+              <div class="bar"><span data-width="90%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-head"><span>Tư duy sáng tạo</span><span>82%</span></div>
+              <div class="bar"><span data-width="82%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-head"><span>Làm việc nhóm</span><span>88%</span></div>
+              <div class="bar"><span data-width="88%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-head"><span>Năng động, ham học hỏi</span><span>92%</span></div>
+              <div class="bar"><span data-width="92%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-head"><span>Tỉ mỉ, cẩn thận</span><span>94%</span></div>
+              <div class="bar"><span data-width="94%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-head"><span>Lắng nghe phân tích</span><span>89%</span></div>
+              <div class="bar"><span data-width="89%"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card glass reveal delay-1">
+          <div class="section-title">
+            <h2>Sở thích</h2>
+          </div>
+          <div class="hobby-list">
+            <div class="fancy-item">
+              <div class="fancy-bullet">♪</div>
+              <div>Ca hát, nghe nhạc, du lịch,...</div>
+            </div>
+            <div class="fancy-item">
+              <div class="fancy-bullet">✦</div>
+              <div>Tìm tòi học hỏi nhiều điều hay mới.</div>
+            </div>
+          </div>
+
+          <div class="section-title" style="margin-top:24px;">
+            <h2>Điểm nổi bật</h2>
+          </div>
+          <div class="pill-group">
+            <div class="pill">Tận tâm với cộng đồng</div>
+            <div class="pill">Tư duy hệ thống</div>
+            <div class="pill">Khả năng phối hợp tốt</div>
+            <div class="pill">Tính chính xác cao</div>
+            <div class="pill">Chủ động học hỏi</div>
+            <div class="pill">Phù hợp môi trường chuyên môn & hành chính</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lien-he">
+    <div class="container">
+      <div class="section-title reveal">
+        <div>
+          <h2>Liên hệ</h2>
+          <p>Sẵn sàng kết nối cho các cơ hội hợp tác chuyên môn, nghiên cứu, hỗ trợ kỹ thuật và phát triển cộng đồng nông nghiệp bền vững.</p>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-box glass reveal delay-1">
+          <h3 style="margin-bottom:16px;">Thông tin liên hệ</h3>
+          <div class="contact-mini">
+            <div class="contact-item">
+              <div class="icon">📞</div>
+              <div>
+                <b>Điện thoại</b>
+                <a href="tel:0927686968">0927 68 69 68</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="icon">✉️</div>
+              <div>
+                <b>Email</b>
+                <a href="mailto:duyen.ntm1907@gmail.com">duyen.ntm1907@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="icon">📍</div>
+              <div>
+                <b>Địa chỉ</b>
+                <span>Xã Bình Phú, tỉnh Vĩnh Long</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-box glass reveal delay-2">
+          <h3 style="margin-bottom:16px;">Thông điệp nghề nghiệp</h3>
+          <div class="desc-list">
+            <div class="fancy-item">
+              <div class="fancy-bullet">♥</div>
+              <div>Kết hợp kiến thức chuyên ngành thú y với kinh nghiệm vận hành, hành chính và hỗ trợ khách hàng để tạo ra giá trị thực tiễn.</div>
+            </div>
+            <div class="fancy-item">
+              <div class="fancy-bullet">♥</div>
+              <div>Ưu tiên các giải pháp chăn nuôi an toàn, hiệu quả và bền vững cho người dân địa phương.</div>
+            </div>
+            <div class="fancy-item">
+              <div class="fancy-bullet">♥</div>
+              <div>Không ngừng học hỏi, cập nhật xu hướng số hóa và cải tiến quy trình trong công việc chuyên môn.</div>
+            </div>
+          </div>
+          <div style="margin-top:18px;">
+            <a class="btn btn-primary" href="mailto:duyen.ntm1907@gmail.com">Gửi email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      © 2026 - CV cá nhân của Nguyễn Thị Mỹ Duyên. Thiết kế theo phong cách hiện đại, thân thiện và chuyên nghiệp.
+    </div>
+  </footer>
+
+  <script>
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+
+    revealElements.forEach(el => observer.observe(el));
+
+    const skillBars = document.querySelectorAll('.bar span');
+    const skillObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          const bar = entry.target;
+          bar.style.width = bar.getAttribute('data-width');
+        }
+      });
+    }, { threshold: 0.4 });
+
+    skillBars.forEach(bar => skillObserver.observe(bar));
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function(e){
+        const id = this.getAttribute('href');
+        const target = document.querySelector(id);
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
